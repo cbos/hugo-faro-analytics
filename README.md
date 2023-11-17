@@ -18,6 +18,7 @@ git submodule add https://github.com/cbos/hugo-faro-analytics.git themes/faro-an
     path = 'faro-analytics'
 ```
 
+## Add to a page header
 
 ```
 {{ partial "faro-analytics/assets/js" . }}
