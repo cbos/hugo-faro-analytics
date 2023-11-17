@@ -23,3 +23,34 @@ git submodule add https://github.com/cbos/hugo-faro-analytics.git themes/faro-an
 ```
 {{ partial "faro-analytics/assets/js" . }}
 ```
+
+## Site Configuration TOML
+
+| Parameter   | type   | required | description                                                                                  |  
+|-------------|--------|----------|----------------------------------------------------------------------------------------------|
+| endpoint    | string | yes      | Url of the Faro collector like https://faro-collector-prod-eu-west-2.grafana.net/collect/xxx | 
+| name        | string | yes      | Name of the application                                                                      |
+| version     | string | no       | Version to report, can be used to make distinction between releases                          | 
+| environment | string | no       | Environment, can be used to make distinction between for example local and production        |
+
+```toml
+[params]
+[params.faro_analytics]
+    endpoint = "https://faro-collector-..."
+    name = "name"
+    version = "1.0.0"
+    environment = "production"
+```
+
+## Page Configuration TOML
+
+If you want to exclude a page from analytics, you can configure that per page.
+
+| Parameter   | type    | required | description                                                           |  
+|-------------|---------|----------|-----------------------------------------------------------------------|
+| enabled     | boolean | no       | By default analysis for a page is abled. Make it `false` to disable it | 
+
+```yaml
+faro_analytics:
+  analyze: true
+```
