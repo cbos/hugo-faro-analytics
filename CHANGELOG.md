@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.0.0](https://github.com/cbos/hugo-faro-analytics/compare/v0.1.0...v1.0.0) (2023-11-17)
+
+
+### Features ✨
+
+* Add Grafana Faro setup and made it configurable. ([e41124d](https://github.com/cbos/hugo-faro-analytics/commit/e41124db903a12f22bd318639d2e4c9b1d2819b7))
+
 ## 0.1.0 (2023-11-17)
 
 
