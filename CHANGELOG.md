@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.1.0](https://github.com/cbos/hugo-faro-analytics/compare/v1.0.0...v1.1.0) (2023-11-23)
+
+
+### Features ✨
+
+* Use huge.Environment to automatically use the right value for 'environment'. Fixes [#1](https://github.com/cbos/hugo-faro-analytics/issues/1) ([a7af324](https://github.com/cbos/hugo-faro-analytics/commit/a7af3249c29fe6324b7947f212c96f5cf6113baf))
+* Use huge.Environment to automatically use the right value for 'environment'. Fixes [#3](https://github.com/cbos/hugo-faro-analytics/issues/3) ([60afb55](https://github.com/cbos/hugo-faro-analytics/commit/60afb557d22ffd00c3beba5a472ea0ca736ee1eb))
+
 ## [1.0.0](https://github.com/cbos/hugo-faro-analytics/compare/v0.1.0...v1.0.0) (2023-11-17)
 
 
