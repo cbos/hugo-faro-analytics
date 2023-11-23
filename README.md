@@ -31,7 +31,8 @@ git submodule add https://github.com/cbos/hugo-faro-analytics.git themes/faro-an
 | endpoint    | string | yes      | Url of the Faro collector like https://faro-collector-prod-eu-west-2.grafana.net/collect/xxx | 
 | name        | string | yes      | Name of the application                                                                      |
 | version     | string | no       | Version to report, can be used to make distinction between releases                          | 
-| environment | string | no       | Environment, can be used to make distinction between for example local and production        |
+
+Environment like `production` or `development` is automatically added, as [hugo.Environment](https://gohugo.io/functions/hugo/environment/) variable is used.
 
 ```toml
 [params]
@@ -39,7 +40,6 @@ git submodule add https://github.com/cbos/hugo-faro-analytics.git themes/faro-an
     endpoint = "https://faro-collector-..."
     name = "name"
     version = "1.0.0"
-    environment = "production"
 ```
 
 ## Page Configuration TOML

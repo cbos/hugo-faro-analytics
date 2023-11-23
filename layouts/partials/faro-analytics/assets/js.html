@@ -2,7 +2,7 @@
 {{- $endpoint := site.Params.faro_analytics.endpoint }}
 {{- $name := site.Params.faro_analytics.name }}
 {{- $version := site.Params.faro_analytics.version }}
-{{- $environment := site.Params.faro_analytics.environment }}
+{{- $environment := hugo.Environment }}
 
 <script>
     (function () {
