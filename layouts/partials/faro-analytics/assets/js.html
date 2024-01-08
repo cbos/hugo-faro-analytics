@@ -32,7 +32,11 @@
             // Initialize, configure (if necessary) and add the the new instrumentation to the already loaded and configured Web-SDK.
             webTracingScript.onload = () => {
                 window.GrafanaFaroWebSdk.faro.instrumentations.add(
-                    new window.GrafanaFaroWebTracing.TracingInstrumentation()
+                    new window.GrafanaFaroWebTracing.TracingInstrumentation({
+                        resourceAttributes: {
+                            "deployment.environment": "{{ $environment }}"
+                        }
+                    })
                 );
             };
 
