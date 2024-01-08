@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/cbos/hugo-faro-analytics/compare/v1.1.0...v1.2.0) (2024-01-08)
+
+
+### Features ✨
+
+* Add deployment.environment to the traces generated ([d4aeb1f](https://github.com/cbos/hugo-faro-analytics/commit/d4aeb1f973d4d38864d580bf32086ac1508d9506))
+
 ## [1.1.0](https://github.com/cbos/hugo-faro-analytics/compare/v1.0.0...v1.1.0) (2023-11-23)
 
 
