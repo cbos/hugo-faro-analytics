@@ -9,7 +9,7 @@
         var webSdkScript = document.createElement("script");
 
         webSdkScript.src =
-            "https://unpkg.com/@grafana/faro-web-sdk@^1.0.0/dist/bundle/faro-web-sdk.iife.js";
+            "https://unpkg.com/@grafana/faro-web-sdk@^1.4.0/dist/bundle/faro-web-sdk.iife.js";
 
         webSdkScript.onload = () => {
             window.GrafanaFaroWebSdk.initializeFaro({
@@ -21,13 +21,13 @@
                 },
             });
 
-
             // Load instrumentations at the onLoad event of the web-SDK and after the above configuration.
             // This is important because we need to ensure that the Web-SDK has been loaded and initialized before we add further instruments!
             var webTracingScript = document.createElement("script");
 
+            // fetch the latest version of the Web Tracing package from the CDN
             webTracingScript.src =
-                "https://unpkg.com/@grafana/faro-web-tracing@^1.0.0/dist/bundle/faro-web-tracing.iife.js";
+              "https://unpkg.com/@grafana/faro-web-tracing@^1.4.0/dist/bundle/faro-web-tracing.iife.js";
 
             // Initialize, configure (if necessary) and add the the new instrumentation to the already loaded and configured Web-SDK.
             webTracingScript.onload = () => {
