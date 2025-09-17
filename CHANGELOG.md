@@ -1,5 +1,13 @@
 # Changelog
 
+## [1.2.1](https://github.com/cbos/hugo-faro-analytics/compare/v1.2.0...v1.2.1) (2025-09-17)
+
+
+### Bug Fixes 🐞
+
+* Fix issue with Github action upgrade of release please configuration ([c695c7e](https://github.com/cbos/hugo-faro-analytics/commit/c695c7eadcf907080b0e5583835197d09bfd07b7))
+* Update dependencies for Github action ([fa73d4f](https://github.com/cbos/hugo-faro-analytics/commit/fa73d4fe06e694ac8d018b8826f06a760e269fce))
+
 ## [1.2.0](https://github.com/cbos/hugo-faro-analytics/compare/v1.1.0...v1.2.0) (2024-01-08)
 
 
