@@ -15,4 +15,4 @@ jobs:
     steps:
       - uses: googleapis/release-please-action@v4
         with:
-          manifest-file: 'release-please-config.json'
+          config-file: release-please-config.json
